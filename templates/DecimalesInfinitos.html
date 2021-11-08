@@ -1,0 +1,94 @@
+{% extends 'layout.html' %} {% block title %} {{ super() }} Problema1 {% endblock %} {% block contenido %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h4><b>Decimales infinitos</b></h4>
+            <br>
+            <p>son aquellos números que no se acaban, es decir, hay uno o varios números que se repiten infinitamente. Por ejemplo: 0,333333..... Es infinito por que el 3 se repite indefinidamente. Estos números son divisiones inexactas.</p>
+            <p>
+                Los decimales infinitos se clasifican en periodicos, semiperiodicos y no periodicos. En este caso trabajaremos unicamente con los numeros decimales infinitos periodicos:
+            </p>
+            <div class="container table-responsive">
+                <table class="table">
+                    <thead>
+                        <hr>
+                        <tr>
+                            <h5>Decimales infinitos periodicos
+                            </h5>
+                        </tr>
+                        <tr>
+                            <th class="col-md-4">
+
+                                <p> Un decimal infinito es periódico, si su período comienza inmediatamente después de la coma.
+                                </p>
+
+                            </th>
+                            <th class="col-md-6">
+                                <img src="./static/img/DI.png" class="DI">
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="container table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <h5>
+                                Transformar número decimal periódico a fracción
+                            </h5>
+                        </tr>
+                        <tr>
+                            <th class="col-md-4">
+
+                                <p>
+                                    <font color="aquamarine">Los pasos a seguir son los siguientes:</font>
+                                    <br>
+                                    <font color="aquamarine">a)</font> Se anota el número y se le resta él o los números que están antes del período (de la rayita)
+                                    <br>
+                                    <font color="aquamarine">b)</font> Se coloca como denominador un 9 por cada número que está en el período (si hay un número bajo la rayita se coloca un 9, si hay dos números bajo el período se coloca 99, etc.). Si se puede simplificar, se simplifica.
+                                </p>
+
+                            </th>
+                            <th class="col-md-4">
+                                <img src="./static/img/EJDI.png" class="DI">
+                                <br><br>
+                            </th>
+                        </tr>
+                    </thead>
+            </div>
+            <div class="container table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <h5>
+                                Algoritmo para convertir numeros decimales periodicos infinitos a su fracción correspondiente
+                            </h5>
+                        </tr>
+                        <form method="POST" action="{{url_for('procesar')}}">
+                            <tr>
+                                <th class="col-md-4">
+                                    <p>Digite la parte entera del decimal:</p>
+                                    <input name="Pentera" type="number" placeholder="Parte entera" class="CajaTexto">
+                                    <p>Digite el período del numero decimal:</p>
+                                    <input name="Periodo" type="number" placeholder="Período" class="CajaTexto">
+                                </th>
+                                <th class="col-md-4 ">
+                                    <div class="d-grid gap-2 d-md-block ">
+                                        <button type="submit " class="btn btn-primary ">Generar Fracciones</button>
+                                        <br><br>
+                                        <br>
+                                    </div>
+                                </th>
+                            </tr>
+                        </form>
+                    </thead>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+{% endblock %}

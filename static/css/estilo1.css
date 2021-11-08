@@ -1,0 +1,163 @@
+/*Tipo de letra */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+html {
+    background-color: aquamarine;
+}
+
+
+/*Encabezado */
+
+.header {
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    top: 1%;
+    margin: auto;
+    background-color: black;
+    color: aquamarine;
+    border-radius: 10px;
+}
+
+.caja2 {
+    width: 82%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+
+/* Cuadro del menu de opciones vertical */
+
+.conte-menu {
+    position: fixed;
+    width: 18%;
+    width: 232px;
+    overflow: auto;
+    background: black;
+    height: 100vh;
+    transition: all 500ms ease;
+    color: aquamarine;
+}
+
+
+/*estilo de los links */
+
+.conte-menu nav a {
+    display: block;
+    width: 232px;
+    text-decoration: none;
+    padding: 20px;
+    color: aquamarine;
+}
+
+.conte-menu nav a:hover {
+    background: mediumspringgreen;
+    color: #000000;
+    width: 232px;
+    cursor: pointer;
+}
+
+nav li {
+    width: 100%;
+    position: relative;
+}
+
+nav li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul.components {
+    padding: 15px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+h5 {
+    text-align: center;
+    padding: 2px;
+}
+
+
+/* Caja central :v (la que contiene la info*/
+
+.section {
+    padding-top: 10%;
+    position: fixed;
+    width: 83%;
+    height: 97%;
+    right: 0;
+    top: 10%;
+    background: aquamarine;
+}
+
+.caja {
+    position: absolute;
+    width: 96%;
+    height: 90%;
+    margin: auto;
+    top: 2%;
+    left: 2%;
+    background-color: black;
+    /* Shadow */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    overflow-y: scroll;
+}
+
+body div nav {
+    width: 93%;
+}
+
+th {
+    color: aquamarine;
+    text-align: center;
+}
+
+div.col-md-10 {
+    color: aquamarine;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    color: wheat;
+}
+
+.DI {
+    border-radius: 10px;
+    border-color: aquamarine;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.CajaTexto {
+    border: none;
+    border-bottom: 1px solid aquamarine;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: wheat;
+    font-size: 16px;
+}
+
+input.btn.btn-primary {
+    border-color: aqua;
+    height: 55px;
+    font-size: 20px;
+}
