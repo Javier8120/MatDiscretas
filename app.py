@@ -19,7 +19,7 @@ def ruta1():
 
 
 
-@app.route("/Problema1/procesar", methods=["GET","POST"])
+@app.route("/Problema1/procesar", methods=["POST"])
 def procesar():
     PenteraString = request.form.get("Pentera", int())
     PeriodoString = request.form.get("Periodo", int())
