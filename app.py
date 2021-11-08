@@ -61,7 +61,7 @@ def procesar():
         denominador = int(f"{Pentera}{Periodo}")
         denominador_fraccion = (denominador-Pentera)
         mcd = gcd(denominador,numerador)
-        denominador_simplificado = int(denominador/mcd)
+        denominador_simplificado = int(denominador_fraccion/mcd)
         numerador_simplificado =   int(numerador/mcd)
         fraccion_simplificada= (f"{denominador_simplificado}/{numerador_simplificado}")
         flash(f"La fraccion resultante de : {Pentera},{Periodo}...  es: {denominador_fraccion}/{numerador} y la Fraccion simplificada es: {fraccion_simplificada} ", category='success')
